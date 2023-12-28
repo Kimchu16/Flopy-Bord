@@ -7,3 +7,4 @@
  3. Run the Flopy Bord application (.exe) file
 ![image](https://github.com/Kimchu16/Flopy-Bord/assets/68757902/589ea37a-a490-4c6f-a99f-1f6e352e9ad1)
 ![image](https://github.com/Kimchu16/Flopy-Bord/assets/68757902/3fa11088-1ad5-4b1f-9006-e81fc8914201)
+![image](https://github.com/Kimchu16/Flopy-Bord/assets/68757902/e5cf7920-4424-4ea0-b3d9-83df71079a8e)
