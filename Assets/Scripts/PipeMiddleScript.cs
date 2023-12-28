@@ -25,6 +25,7 @@ public class PipeMiddleScript : MonoBehaviour
         {
             if (canChange)
             {
+                Debug.Log("+1 score");
                 logic.AddScore(1);
                 StartCoroutine(ChangeLogic());
             }
@@ -34,7 +35,6 @@ public class PipeMiddleScript : MonoBehaviour
     //Fixes bug where Score is incremented multiple times when bird gets stuck on pipe
     IEnumerator ChangeLogic()
     {
-        Debug.Log(canChange);
         canChange = false;
         yield return new WaitForSeconds(0.1f);
         canChange = true;
