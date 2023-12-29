@@ -10,6 +10,7 @@ public class PipeSpawnScript : MonoBehaviour
     public GameObject downPipe;
     public GameObject upPipe;
     public BirdScript birdScript;
+    public UpPipeMovement movement;
     public float spawnRate = 2;
     private float timer = 2;
     public float heightOffset = 4;
@@ -36,21 +37,22 @@ public class PipeSpawnScript : MonoBehaviour
             {
                 rnd = Random.Range(1, 100);
 
-                if (rnd < 100)
+                if (rnd < 0)
                 {
                     SpawnPipe(pipe);
                     
                 }
                 else
                 {
-                    if (rnd % 2 == 0)
+                    /*if (rnd % 2 == 0)
                     {
                         SpawnPipe(upPipe);
                     }
                     else
                     {
                         SpawnPipe(downPipe);
-                    }
+                    }*/
+                    SpawnPipe(upPipe);
                 }
 
                 timer = 0;

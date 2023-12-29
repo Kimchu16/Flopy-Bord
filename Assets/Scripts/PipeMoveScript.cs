@@ -16,9 +16,9 @@ public class PipeMoveScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + (Vector3.left * moveSpeed) * Time.deltaTime; //deltaTime keeps timing consistent acorss different devices
+        this.transform.position = this.transform.position + (Vector3.left * moveSpeed) * Time.deltaTime; //deltaTime keeps timing consistent acorss different devices
 
-        if (transform.position.x < deadzone)
+        if (this.transform.position.x < deadzone)
         {
             Debug.Log("Pipe destroyed");
             Destroy(gameObject);

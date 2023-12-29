@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912228156062722901}
   - component: {fileID: 8480810109559943892}
+  - component: {fileID: -6257872146581898951}
   m_Layer: 0
   m_Name: Up Pipe
   m_TagString: Untagged
@@ -42,13 +43,34 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968912928928728552}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6899e2acd0a3974aa358b7964ba3e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
   deadzone: -45
+--- !u!114 &-6257872146581898951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968912928928728552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b165e94108146478069db6ed644fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnScript: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  smoothTime: 0.5
+  speed: 10
+  moveSpeed: 5
+  deadzone: -45
+  heightOffset: 4
+  rnd: 0
+  changeMovement: 1
 --- !u!1 &2439005903664614243
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3631938926254814613}
-  - component: {fileID: 1589971953534055140}
   - component: {fileID: 3285353615578830541}
   m_Layer: 0
   m_Name: Down Pipe
@@ -36,22 +35,6 @@ Transform:
   - {fileID: 8980609674998342475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1589971953534055140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638294955531504362}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfb662f3a2635a1498414742260e2f7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startTime: 0
-  upPipe: {fileID: 0}
-  downPipe: {fileID: 0}
-  pipeRenderer: {fileID: 0}
 --- !u!114 &3285353615578830541
 MonoBehaviour:
   m_ObjectHideFlags: 0
