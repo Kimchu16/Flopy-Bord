@@ -6,18 +6,17 @@ using UnityEngine;
 
 public class UpPipeMovement : MonoBehaviour
 {
-    public PipeSpawnScript spawnScript;
     public Vector3 targetPosition;
     public float smoothTime = 0.5f;
-    public float speed = 10;
     public float moveSpeed = 5;
+    public float upwardSpeed = 1;
     public float deadzone = -45;
-    Vector3 velocity;
     public float heightOffset = 4;
     public float rnd;
     public bool changeMovement = false;
     private float timer = 0;
-
+    public float startTime = 0;
+    public bool hasMoved = false;
 
     // Start is called before the first frame update
     void Start()
@@ -26,17 +25,18 @@ public class UpPipeMovement : MonoBehaviour
         float highestSpawnPoint = this.transform.position.y + heightOffset;
         rnd = Random.Range(lowestSpawnPoint, highestSpawnPoint);
         this.targetPosition = new Vector3(this.transform.position.x, rnd, 0);
+        startTime = Time.fixedTime;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!changeMovement)
+        if (!changeMovement || hasMoved )
         {
             MoveX();
-            timer += Time.deltaTime;
+            timer += Time.fixedTime;
 
-            if (timer > 2)
+            if (timer - startTime > 500)
             {
                 changeMovement = true;
                 timer = 0;
@@ -47,9 +47,9 @@ public class UpPipeMovement : MonoBehaviour
             MoveY();
             MoveX();
 
-            if (transform.position.y <= targetPosition.y)
+            if (transform.position.y >= targetPosition.y)
             {
-                changeMovement = false;
+                hasMoved = true;
             }
         }
 
@@ -76,6 +76,6 @@ public class UpPipeMovement : MonoBehaviour
 
     void MoveY()
     {
-        this.transform.position = Vector3.SmoothDamp(this.transform.position, targetPosition, ref velocity, smoothTime, speed * Time.deltaTime);
+        this.transform.position = this.transform.position + (Vector3.up * moveSpeed) * Time.deltaTime;
     }
 }
