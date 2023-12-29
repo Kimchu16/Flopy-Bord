@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 937e368e080dfee4f9637ff738727a22
+guid: a55fbf314b5ef3347b9cd5a78f079b99
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pipeVar_0
+      name: Top Up Pipe
       rect:
         serializedVersion: 2
         x: 0
@@ -118,20 +118,20 @@ TextureImporter:
         width: 32
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0324f7d6ed846c459a48adb4f34f73f
-      internalID: 954831375
+      spriteID: 8110a17b1d4830f4ebaae8e6a4306fb5
+      internalID: -1061349851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipeVar_1
+      name: Top Down Pipe
       rect:
         serializedVersion: 2
         x: 32
@@ -139,20 +139,20 @@ TextureImporter:
         width: 32
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ca7a317b8259d94fa8ec299b1740a48
-      internalID: -355840623
+      spriteID: 04832d51b19b2994f8f7af8528b371c1
+      internalID: 2048879826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pipeVar_2
+      name: Bottom Up Pipe
       rect:
         serializedVersion: 2
         x: 64
@@ -160,14 +160,56 @@ TextureImporter:
         width: 32
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67bc433be6030ef4da7e1eaf2e435b9b
-      internalID: -130668613
+      spriteID: 57ffd92f3bbb9ce4a8efb6d93c00e26c
+      internalID: -1151912493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottom Down Pipe
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d941d9573febfe43aa3197208ab1dbf
+      internalID: -481574254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Middle Pipe
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 782db1921d5efc3429fe19489cb107e3
+      internalID: -1263669863
       vertices: []
       indices: 
       edges: []
@@ -183,9 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pipeVar_0: 954831375
-      pipeVar_1: -355840623
-      pipeVar_2: -130668613
+      Bottom Down Pipe: -481574254
+      Bottom Up Pipe: -1151912493
+      Middle Pipe: -1263669863
+      Top Down Pipe: 2048879826
+      Top Up Pipe: -1061349851
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
