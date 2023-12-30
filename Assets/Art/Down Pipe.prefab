@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3631938926254814613}
   - component: {fileID: 3285353615578830541}
+  - component: {fileID: 7780195185061683481}
   m_Layer: 0
   m_Name: Down Pipe
   m_TagString: Untagged
@@ -49,6 +50,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   deadzone: -45
+--- !u!114 &7780195185061683481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638294955531504362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01b165e94108146478069db6ed644fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetPosition: {x: 0, y: 0, z: 0}
+  VertMoveSpeed: 5
+  heightOffset: 4
+  rnd: 0
+  minMove: 1
+  startTime: 0
+  hasMoved: 0
+  offSet: 0
+  dir: 1
 --- !u!1 &901338518267949218
 GameObject:
   m_ObjectHideFlags: 0

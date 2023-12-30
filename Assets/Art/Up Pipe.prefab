@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1912228156062722901}
-  - component: {fileID: -6257872146581898951}
+  - component: {fileID: 440320582711586559}
+  - component: {fileID: 4723506327910469214}
   m_Layer: 0
   m_Name: Up Pipe
   m_TagString: Untagged
@@ -35,7 +36,21 @@ Transform:
   - {fileID: 8223084171011937832}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-6257872146581898951
+--- !u!114 &440320582711586559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 968912928928728552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6899e2acd0a3974aa358b7964ba3e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  deadzone: -45
+--- !u!114 &4723506327910469214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -48,15 +63,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPosition: {x: 0, y: 0, z: 0}
-  smoothTime: 0.5
-  moveSpeed: 5
-  upwardSpeed: 1
-  deadzone: -45
+  VertMoveSpeed: 5
   heightOffset: 4
   rnd: 0
-  changeMovement: 1
+  minMove: 1
   startTime: 0
   hasMoved: 0
+  offSet: 0
+  dir: 0
 --- !u!1 &1273262662245568326
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,6 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum pipeType
+{
+    Regular,
+    Up,
+    Down
+}
+
 public class PipeSpawnScript : MonoBehaviour
 {
 
@@ -10,7 +17,7 @@ public class PipeSpawnScript : MonoBehaviour
     public GameObject downPipe;
     public GameObject upPipe;
     public BirdScript birdScript;
-    public UpPipeMovement movement;
+    public PipeMovement movement;
     public float spawnRate = 2;
     private float timer = 2;
     public float heightOffset = 4;
@@ -37,22 +44,21 @@ public class PipeSpawnScript : MonoBehaviour
             {
                 rnd = Random.Range(1, 100);
 
-                if (rnd < 0)
+                if (rnd < 70)
                 {
-                    SpawnPipe(pipe);
+                    SpawnPipe(pipe, pipeType.Regular);
                     
                 }
                 else
                 {
-                    /*if (rnd % 2 == 0)
+                    if (rnd % 2 == 0)
                     {
-                        SpawnPipe(upPipe);
+                        SpawnPipe(upPipe, pipeType.Up);
                     }
                     else
                     {
-                        SpawnPipe(downPipe);
-                    }*/
-                    SpawnPipe(upPipe);
+                        SpawnPipe(downPipe, pipeType.Down);
+                    }
                 }
 
                 timer = 0;
@@ -60,12 +66,37 @@ public class PipeSpawnScript : MonoBehaviour
         }
     }
 
-    void SpawnPipe(GameObject pipe)
+    void SpawnPipe(GameObject pipe, pipeType Type)
     {
-        float lowestSpawnPoint = transform.position.y - heightOffset;
-        float highestSpawnPoint = transform.position.y + heightOffset;
+        float mid = transform.position.y;
+        int moveOffSet = 3;
 
-        Instantiate(pipe, new Vector3(transform.position.x, Random.Range(lowestSpawnPoint, highestSpawnPoint), 0), transform.rotation);
+        float lowestSpawnPoint = mid - heightOffset;
+        float highestSpawnPoint = mid + heightOffset;
+
+        if (Type == pipeType.Up)
+        {
+            highestSpawnPoint = mid + heightOffset - moveOffSet;
+        }
+        else if (Type == pipeType.Down)
+        {
+            lowestSpawnPoint = mid - heightOffset + moveOffSet;
+        }
+
+        float spawnPoint = Random.Range(lowestSpawnPoint, highestSpawnPoint);
+
+        GameObject pipeObject = Instantiate(pipe, new Vector3(transform.position.x, spawnPoint, 0), transform.rotation);
+        /*
+        if (Type == pipeType.Up)
+        {
+            UpPipeMovement comp = pipeObject.GetComponent<UpPipeMovement>();
+            comp.offSet = spawnPoint;
+        }
+        else if (Type == pipeType.Down)
+        {
+            
+        }
+        */
     }
 
 }
