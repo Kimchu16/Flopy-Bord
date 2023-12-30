@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a55fbf314b5ef3347b9cd5a78f079b99
+guid: 937e368e080dfee4f9637ff738727a22
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Top Up Pipe
+      name: Up Top Pipe
       rect:
         serializedVersion: 2
         x: 0
@@ -124,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8110a17b1d4830f4ebaae8e6a4306fb5
-      internalID: -1061349851
+      spriteID: 5de10b95e6ca3b54c92dcbb1954d9aad
+      internalID: 1965879226
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Top Down Pipe
+      name: Down Top Pipe
       rect:
         serializedVersion: 2
         x: 32
@@ -145,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 04832d51b19b2994f8f7af8528b371c1
-      internalID: 2048879826
+      spriteID: 3fce50c9c566651408e238687e0b2c0c
+      internalID: 1843727012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bottom Up Pipe
+      name: Up Bottom Pipe
       rect:
         serializedVersion: 2
         x: 64
@@ -166,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57ffd92f3bbb9ce4a8efb6d93c00e26c
-      internalID: -1151912493
+      spriteID: 28e49bf4bf7dabc41ad63ca27820c473
+      internalID: -1613180453
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Bottom Down Pipe
+      name: Down Bottom Pipe
       rect:
         serializedVersion: 2
         x: 96
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d941d9573febfe43aa3197208ab1dbf
-      internalID: -481574254
+      spriteID: def1e70cc94cb1d4f9aa66601fe733cb
+      internalID: 439301959
       vertices: []
       indices: 
       edges: []
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 782db1921d5efc3429fe19489cb107e3
-      internalID: -1263669863
+      spriteID: a0f572dbc83cdb34c8cde7d509432d99
+      internalID: -1164514462
       vertices: []
       indices: 
       edges: []
@@ -225,11 +225,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bottom Down Pipe: -481574254
-      Bottom Up Pipe: -1151912493
-      Middle Pipe: -1263669863
-      Top Down Pipe: 2048879826
-      Top Up Pipe: -1061349851
+      Down Bottom Pipe: 439301959
+      Down Top Pipe: 1843727012
+      Middle Pipe: -1164514462
+      Up Bottom Pipe: -1613180453
+      Up Top Pipe: 1965879226
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
