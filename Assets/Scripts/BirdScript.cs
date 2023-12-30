@@ -49,7 +49,11 @@ public class BirdScript : MonoBehaviour
             AdjustAngle();
             BirdFlap();
         }
-    
+        
+        if (!birdIsAlive)
+        {
+            return;
+        }
         //if bird goes off screen
         if (transform.position.y < BottomDeadzone)
         {

@@ -2033,7 +2033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Press Space or Right Click to start
+  m_text: Press Space or Left Click to start
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -7735,6 +7735,7 @@ GameObject:
   - component: {fileID: 2139927341}
   - component: {fileID: 2139927344}
   - component: {fileID: 2139927345}
+  - component: {fileID: 2139927346}
   m_Layer: 5
   m_Name: Play Again Button
   m_TagString: Untagged
@@ -7906,6 +7907,19 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+--- !u!114 &2139927346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139927339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398254723eb802141b0e24128e0aea10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dm: {fileID: 366028766}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
