@@ -41,7 +41,7 @@ public class BirdScript : MonoBehaviour
     {
         if (!start)
         {
-            checkStart();
+            CheckStart();
         }
         
         if (start)
@@ -114,7 +114,7 @@ public class BirdScript : MonoBehaviour
         }
     }
 
-    public void checkStart()
+    public void CheckStart()
     {
         if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0)))
         {
